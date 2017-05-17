@@ -43,21 +43,21 @@
 		<div class="register w3layouts agileits">
 
 			<h2  style="color: #e1184a;"">Register</h2>
-			<form action="#" method="post">
-				<input type="text" Name="Book ID" placeholder="Book ID" required="">
-				<input type="text" Name="Book Title" placeholder="Book Title" required="">
+			<form class="for" action="/fd/data.php" method="post">
+				<input type="number" name="book_id" placeholder="Book ID" required="">
+				<input type="text" name="book_title" placeholder="Book Title" required="">
 				<input type="text" Name="Author" placeholder="Author" required="">
-				<input type="text" Name="Edition" placeholder="Edition" required="">
-				<input type="text" Name="Availability_of_book" placeholder="Availability_of_book" required="">
-				<input type="text" Name="Rate" placeholder="Rate" required="">
-				<input type="text" Name="Publication Date" placeholder="Publication Date" required="">
-				<input type="text" Name="Categories Number" placeholder="Categories Number" required="">
-
+				<input type="number" Name="Edition" placeholder="Edition" required="">
+				<input type="number" Name="availability_of_book" placeholder="Availability_of_book" required="">
+				<input type="number" Name="Rate" placeholder="Rate" required="">
+				<input type="date" Name="publication_Date" placeholder="Publication Date" required="">
+				<input type="number" Name="categories_number" placeholder="Categories Number" required="">
+				
+                <input type="submit" name="ay7aga" /> 
 			</form>
-			<div class="send-button w3layouts agileits">
-				<form>
-					<input type="submit" value="Register" style="color: #e1184a;">
-				</form>
+
+			<?php echo $book_id; ?>
+			
 			</div>
 
 			<div class="clear"></div>
