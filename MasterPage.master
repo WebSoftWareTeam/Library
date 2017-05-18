@@ -1,0 +1,131 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans' rel='stylesheet' type='text/css'>
+     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--slider-->
+    <link href="css/slider.css" rel="stylesheet" type="text/css" media="all"/>
+     <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+     <script type="text/javascript">
+        $(window).load(function () {
+        $('#slider').nivoSlider();
+         });
+          </script>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+    <div>
+    
+<div class="btm_border">
+<div class="h_bg">
+<div class="wrap">
+	<div class="header">
+		<div class="logo">
+			<h1><a href="index.html" style="font-width:bold; font-size: 60px; color:#e1184a; font-family:Times;">University Library</a></h1>
+		</div>
+		<div class="social-icons">
+			<ul>
+			     <li><a class="pinterest" href="#" target="_blank"></a></li>
+			     <li><a class="twitter" href="#" target="_blank"></a></li>
+			     <li><a class="dribbble" href="#" target="_blank"></a></li>
+			     
+		   </ul>
+		</div>	
+		<div class="clear"></div>
+	</div>
+	
+		<div class='cssmenu'>
+			<ul>
+			    <li class='active'><a href='index.aspx'><span>Home</span></a></li>
+			    <li><a href='about.aspx'><span>About</span></a></li>
+			    <li class='has-sub'><a href='service.aspx'><span>Services</span></a></li>
+			    <li class='last'><a href='contact.aspx'><span>Contact</span></a></li>
+				<li class='last'><a href='form.aspx'><span>Log in</span></a></li>
+				<li class='last'><a href='form11.aspx'><span>Register a Book</span></a></li>
+			 	<div class="clear"></div>
+			 </ul>
+	</div>
+	
+	<div class="clear"></div>
+</div>
+</div>
+</div>
+<div class="slider_bg">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+   </div>
+   
+<div class="main_bg">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+<div class="main_btm">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server"></asp:ContentPlaceHolder>
+</div>
+<!--footer-->
+<div class="footer-bg">	
+<div class="wrap">
+<div class="footer">
+  <div class="box1">
+	<h4 class="btm">What We Do</h4>
+	<p>Libraries are places of information. When most people think "library" they think books. And while that is certainly true, these days books take different shapes, such as e-books and audio books. More than just books, libraries are places of information, offering people free access to a wealth of information that they often can't find elsewhere, whether online, in print or in person. Whether they're looking for DVDs or the latest best-seller; </p>
+	
+  </div>
+   <div class="box1" style="text-align:center" >
+	<h4 class="btm" >Categories </h4>
+	<nav>
+		<ul style="text-align: center;">
+			
+			<li><a href="">Computers & Technology </a></li>
+			<br>
+			<li><a href="">Science & Mathematics</a></li>
+			<br>
+			<li><a href="">Sociology & Psychology </a></li>
+			<br>
+			<li><a href=""> Business & Economics</a></li>
+			<br>
+			<li><a href="">Travel & Languages </a></li>
+			<br>
+			<li><a href="">Engineering </a></li>
+			<br>
+			<li><a href="">Geography</a></li>
+			<br>
+			<li><a href="">Fiction</a></li>
+			<br>
+			<li><a href="">Politics </a></li>
+			<br>
+			
+	    </ul>
+	</nav>
+	</div>
+	<div class="box1">
+		<h4 class="btm">Get in touch</h4>
+		<div class="box1_address">
+		    <p> Sabarbay , Tanta, </p>
+			<p> Gharbia Governorate, </p>
+			<p>Egypt</p>
+			<br>
+			<br>
+			<p>Phone:+20 40 3453862</p>
+			<p>Fax: (000) 000 00 00 0</p>
+			<p>Email: <span>eng.tanta.edu.eg</span></p>
+			<p>Follow on: <span>Facebook</span>, <span>Twitter</span></p>
+		</div>
+		</div>
+	</div>
+	<div class="clear"></div>			
+</div>
+</div>
+</div>
+    </div>
+    </form>
+</body>
+</html>
