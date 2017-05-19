@@ -1,4 +1,4 @@
-﻿<!--
+<!--
 	Author: W3layouts
 	Author URL: http://w3layouts.com
 	License: Creative Commons Attribution 3.0 Unported
@@ -19,7 +19,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="keywords" content="Library Member Login Form Widget Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
-		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+		 </script>
 	<!-- //Meta-Tags -->
 
 	<!-- Style --> <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
@@ -43,25 +44,35 @@
 		<div class="register w3layouts agileits">
 
 			<h2  style="color: #e1184a;">Borrow_Transaction</h2>
-			
-				<input type="number" Name="Borrower_id" placeholder="Borrower_id" required="">
-				<input type="number" Name="Librarian_id" placeholder="Librarian_id" required="">
-				<input type="number" Name="Book_id" placeholder="Book_id" required="">
-				<input type="text" Name="Borrow_transaction" placeholder="Borrow_transaction" required="">
-				<input type="date" Name="Borrowed_datetime" placeholder="Borrowed_datetime" required="">
-				<input type="date" Name="Returned_datetime" placeholder="Returned_datetime" required="">
-				<input type="number" Name="Contact_data_id" placeholder="Contact_data_id" required="">
+			<form class="for" action="/fd/data.php" method="post">
+				<input type="number" name="Borrower_id" placeholder="Borrower_id" required="">
+				<input type="number" name="Librarian_id" placeholder="Librarian_id" required="">
+				<input type="number" name="Book_id" placeholder="Book_id" required="">
+				<input type="text" name="Borrow_transaction" placeholder="Borrow_transaction" required="">
+				<input type="date" name="Borrowed_datetime" placeholder="Borrowed_datetime" required="">
+				<input type="date" name="Returned_datetime" placeholder="Returned_datetime" required="">
+				<input type="number" name="Contact_data_id" placeholder="Contact_data_id" required="">
+				<input type="submit" name="submit">
+				<!-- <a class="subt" href="data.php">Borrow Now</a> -->
+            </form>
 
-			<div class="send-button w3layouts agileits">
-				
-					<input type="submit" value="Borrow Now" style="color: #e1184a;">
-				
+            <div class="blk">
+				<form class="for1" action="/fd/ubdate.php" method="post">	
+					<button type="submit">update</button>
+				</form>
+            </div>
+            <div class="blk">
+				<form class="for2" action="/fd/delete.php" method="post">	
+					<button type="submit">delete</button>
+				</form>
+			</div>	
+            <div class="blk">
+				<form class="for3" action="/fd/service.html" method="post">	
+					<button type="submit">cancel</button>
+				</form>
 			</div>
-
 			<div class="clear"></div>
 		</div>
-
-		<div class="clear"></div>
 
 	</div>
 
