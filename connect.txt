@@ -1,0 +1,23 @@
+<?php
+
+   $dsn='mysql:host=localhost;dbname=allusers';
+   $user ='root';
+   $pass = '';
+   $option=array(
+    PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8'
+   )
+   try {
+   $name=$_POST['Username'];
+   $passward=$_POST['Password'];
+   $dbs= new PDO($dsn ,$user,$pass,$option);
+   $dbs->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+   $C="INSERT INTO 'allusers.login('name','passward')VALUES('$name','$passward')";
+   $dbs->exec($C);
+   
+   
+   echo 'you are connected';
+   
+   }
+   catch(PDOException $e){
+    echo 'failed'. $e->getMessage();
+   }
