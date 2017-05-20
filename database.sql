@@ -1,3 +1,5 @@
+create database databs 
+
 create table BOOKS(
 book_id int constraint book_pk primary key,
 book_title varchar(50),
@@ -45,6 +47,21 @@ borrower_gender varchar(30),
 contact_person_phone int
 );
 
+create table problems( 
+borrower_id int,
+borrower_name varchar(50),
+borrower_problem varchar(100),
+borrower_Email varchar(30)
+
+);
+
+create table audios(
+
+id int not null primary key AUTO_INCREMENT,
+filename varchar(50)
+
+);
+ 
 /* function insert to add a new row in the table */
 insert into BOOKS
 (book_id, book_title ,Author ,Edition ,availability_of_book ,Rate ,publication_Date,category_id )
